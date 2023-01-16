@@ -1,0 +1,12 @@
+ create or replace function luas_lingkaran(double precision) returns double precision as
+  
+$$     
+declare               
+luas double precision;
+begin                 
+luas = 3.14 * $1 * $1;
+return luas;
+end;
+$$
+language plpgsql;
+
